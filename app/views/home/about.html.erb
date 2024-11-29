@@ -1,0 +1,8 @@
+<h1>About</h1>
+<p>Web page to manage your Employees list </p>
+<p>You can add, edit, delete Employees from your list</p>
+<% if user_signed_in? %>
+  <p><%= link_to "View your friends", friends_path %></p>
+<% else %>
+  <p>Please <%= link_to "Sign In", new_user_session_path%> to manage your friends list</p>
+<% end %>
