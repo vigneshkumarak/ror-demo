@@ -1,0 +1,18 @@
+development:
+  host: '127.0.0.1'
+  port: 9042
+  keyspace: friends_development
+  consistency: quorum
+
+test:
+  host: '127.0.0.1'
+  port: 9042
+  keyspace: friends_test
+  consistency: quorum
+
+production:
+  hosts:
+    - 'cassandra.example.com'
+  port: 9042
+  keyspace: friends_production
+  consistency: quorum

@@ -35,3 +35,6 @@
 yarn-debug.log*
 .yarn-integrity
 .Gemfile-bkp
+sql_to_cql_converter.rb
+sql_to_cql_converter.rb-full
+app/views/friends/index.orig

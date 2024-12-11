@@ -6,8 +6,18 @@ default: &default
   host: localhost
   socket: /tmp/mysql.sock  # Add this line if you're on macOS
 
+#development:
+#  primary:
+#    <<: *default
+#    adapter: mysql2
+#    database: railsfriends_development
+#    username: root
+#    password: 
+#    host: localhost
+#    pool: 5
+
 development:
-  primary:
+ primary:
     <<: *default
     adapter: mysql2
     database: railsfriends_development
@@ -15,6 +25,14 @@ development:
     password: 
     host: localhost
     pool: 5
+    migrations_paths: db/migrate
+ cassandra:
+  adapter: cassandra
+  host: '127.0.0.1'
+  port: 9042
+  keyspace: friends_development
+  consistency: quorum
+  migrations_paths: db/cassandra_migrate
 
 test:
   <<: *default

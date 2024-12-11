@@ -10,6 +10,9 @@ gem 'net-protocol', '~> 0.1.2'  # To fix the warning messages
 gem 'spring-watcher-listen', '~> 2.0.0'  # For Spring support
 gem 'bootsnap', '1.4.9'
 
+gem 'activerecord-cassandra-adapter', path: './activerecord-cassandra-adapter'
+gem 'activerecord' , path: './activerecord'
+
 gem "rails", "6.1.7.8"
 gem "mysql2", "0.5.2"
 gem 'puma', '~> 4.1'
